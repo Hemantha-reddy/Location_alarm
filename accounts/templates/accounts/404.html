@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+ @import url('https://fonts.googleapis.com/css?family=Poppins');
+ 
+ /* BASIC */
+ 
+ 
+ body {
+   font-family: "Poppins", sans-serif;
+   height: 100vh;
+ }
+ 
+
+ 
+ 
+ /* TABS */
+ 
+ h1.inactive {
+   color: #cccccc;
+ }
+ 
+ h1.active {
+   color: #0d0d0d;
+   border-bottom: 2px solid #5fbae9;
+ }
+ .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+ 
+ </style>
+     </head>
+    {% load static %}
+  <body ALIGN="CENTER"><h1> </h1>
+    <h1> PLEASE LOGIN FIRST</h1>
+    <button class="button" onclick=back_to_maps()><label>Login</label></button>
+        
+  <script>
+  function back_to_maps()
+  {
+    
+    window.location.href='../login';
+  }
+  </script>
+  
+</body>
+</html>

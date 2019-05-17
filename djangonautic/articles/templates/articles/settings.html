@@ -1,0 +1,38 @@
+{% extends 'articles/base.html' %}
+{% load static from staticfiles %}
+<!-- loading the static module for keyword 'static' -->
+<head>
+  {% block head %}
+  <title>Settings</title>
+  {% endblock %}
+</head>
+{% block content %}
+#submit the changes made and store them
+<form class="" action="{% url 'articles:finalmap' %}" method="post">
+{% csrf_token %}
+<div class="container-fluid">
+  <a href="{% url 'articles:locations' %}">Saved Locations</a></br>
+  <a href="#">Reset Alarm</a></i></br>
+  <a href="{% url 'articles:contacts' %}">Change Contacts</a></br>
+</div>
+
+</form>
+
+
+
+{% endblock %}
+
+<!--
+    <h1>Settings:</h1>
+    <h2 id="haha">huh</h2>
+    <div class="articles">
+      {% for variable in username %}
+        <div class="article">
+          <h2><a href="#">{{variable.username}}</a></h2>
+          <h2><a href="#">{{variable.email}}</a></h2>
+        </div>
+      {% endfor %}
+    </div>
+    <input type="button" name="hello" value="hi" onclick="/map.html" /> -->
+  </body>
+</html>
